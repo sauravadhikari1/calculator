@@ -82,10 +82,18 @@ display: flex;
 
 justify-content: flex-end;
 
-}
-.display2 p{
+
     margin: 10px 10px 0px 0px;
     font-size: 80px;
     font-weight: lighter;
 }
-   
+   .input{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 0; 
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+   }
