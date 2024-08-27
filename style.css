@@ -82,9 +82,8 @@ display: flex;
 
 justify-content: flex-end;
 
-
-    margin: 10px 10px 0px 0px;
-    font-size: 80px;
+padding-right: 10px;
+    font-size: 60px;
     font-weight: lighter;
 }
    .input{
@@ -93,7 +92,12 @@ justify-content: flex-end;
     background-color: black;
     color: white;
     border: 0; 
-    font-size: 25px;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 35px;
+text-align:end;   
+padding-right: 10px;
+
+}
+
+   .btn:hover{
+    cursor:default;
    }
