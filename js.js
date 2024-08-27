@@ -8,22 +8,29 @@ arr.forEach((button)=>{
             e.target.innerHTML= '*'
         }
        
-        
-        if(e.target.innerHTML== '='){
-            string=eval(string);
-           
-            display.textContent=string
-        
+        try{
+
+            if(e.target.innerHTML== '='){
+                string=eval(string);
+                
+                display.textContent=string
+                
+            }
+            else if(e.target.innerHTML== 'C' || e.target.innerHTML== 'AC' ){
+                string="";
+                document.querySelector('input').value=string
+                display.textContent='0'
+            }
+            else{
+                
+                string=string+e.target.innerHTML
+                document.querySelector('input').value=string
+            }
         }
-        else if(e.target.innerHTML== 'C' || e.target.innerHTML== 'AC' ){
+        catch{
             string="";
             document.querySelector('input').value=string
-            display.textContent='0'
-        }
-        else{
-            
-            string=string+e.target.innerHTML
-            document.querySelector('input').value=string
+            display.textContent=" error "
         }
 
     })
